@@ -1,0 +1,112 @@
+{
+  "usuarios": [
+    { "id": 1, "nome": "usuario01", "e-mail": "usuario1@email.com", "senha": "1", "senhaRepeticao": "1", "matricula": "1", "cpf": "111111111", "telefone": "1111-1111", "cargo": "nome1", "admin": true },
+    { "id": 2, "nome": "usuario02", "e-mail": "usuario2@email.com", "senha": "1", "senhaRepeticao": "1", "matricula": "2", "cpf": "111111111", "telefone": "2222-2222", "cargo": "nome2", "admin": true },
+    { "id": 3, "nome": "usuario03", "e-mail": "usuario3@email.com", "senha": "1", "senhaRepeticao": "1", "matricula": "3", "cpf": "111111111", "telefone": "3333-3333", "cargo": "nome3", "admin": true },
+    { "id": 4, "nome": "usuario04", "e-mail": "usuario4@email.com", "senha": "1", "senhaRepeticao": "1", "matricula": "4", "cpf": "111111111", "telefone": "4444-4444", "cargo": "nome4", "admin": false },
+    { "id": 5, "nome": "usuario05", "e-mail": "usuari5@email.com", "senha": "1", "senhaRepeticao": "1", "matricula": "5", "cpf": "111111111", "telefone": "5555-5555", "cargo": "nome5", "admin": false }
+  ],
+  "administradores": [
+    { "id": 1, "idUsuario": 1 },
+    { "id": 2, "idUsuario": 2 }
+  ],
+  "funcionario": [
+    { "id": 1, "idUsuario": 1 },
+    { "id": 2, "idUsuario": 2 }
+  ],
+  "reservas": [
+    { "id": 1, "dataEntrada": "11/11/1111", "dataSaida": "22/22/2222", "observacao": "insira um texto", "valorTotal": "R$00,00", "qtdHospede": "1", "idQuarto": "1", "idHospede": "1" },
+    { "id": 2, "dataEntrada": "11/11/1111", "dataSaida": "22/22/2222", "observacao": "insira um texto", "valorTotal": "R$00,00", "qtdHospede": "2", "idQuarto": "2", "idHospede": "2" },
+    { "id": 3, "dataEntrada": "11/11/1111", "dataSaida": "22/22/2222", "observacao": "insira um texto", "valorTotal": "R$00,00", "qtdHospede": "3", "idQuarto": "3", "idHospede": "3" },
+    { "id": 4, "dataEntrada": "11/11/1111", "dataSaida": "22/22/2222", "observacao": "insira um texto", "valorTotal": "R$00,00", "qtdHospede": "4", "idQuarto": "4", "idHospede": "4" }
+  ],
+  "hospedes": [
+    { "id": 1, "email": "hospede1@email.com", "telefone": "1111-1111", "endereco": "rua,numero,bairro,cidade,estado1" },
+    { "id": 2, "email": "hospede2@email.com", "telefone": "2222-2222", "endereco": "rua,numero,bairro,cidade,estado2" },
+    { "id": 3, "email": "hospede3@email.com", "telefone": "3333-3333", "endereco": "rua,numero,bairro,cidade,estado3" },
+    { "id": 4, "email": "hospede4@email.com", "telefone": "4444-4444", "endereco": "rua,numero,bairro,cidade,estado4" }
+  ],
+  "pessoasFisicas": [
+    { "id": 1, "nome": "nome 1", "cpf": "111111111", "idHospede": "1" },
+    { "id": 2, "nome": "nome 2", "cpf": "111111111", "idHospede": "2" },
+    { "id": 3, "nome": "nome 3", "cpf": "111111111", "idHospede": "3" },
+    { "id": 4, "nome": "nome 4", "cpf": "111111111", "idHospede": "4" }
+  ],
+  "pessoasJuridicas": [
+    { "id": 1, "cnpj": "11111111111111", "racaoSocial": "nome1", "nomeFantasia": "nome 1", "idHospede": "1" },
+    { "id": 2, "cnpj": "11111111111111", "racaoSocial": "nome2", "nomeFantasia": "nome 2", "idHospede": "2" },
+    { "id": 3, "cnpj": "11111111111111", "racaoSocial": "nome3", "nomeFantasia": "nome 3", "idHospede": "3" },
+    { "id": 4, "cnpj": "11111111111111", "racaoSocial": "nome4", "nomeFantasia": "nome 4", "idHospede": "4" }
+  ],
+  "pagamentos": [
+    { "id": 1, "valor": "R$00,00", "dataPagamento": "11/11/1111", "status": "recebidos", "totalRecebido": "R$00,00", "pagamentosRealizados": "1", "valorMedioReserva": "R$00,00" },
+    { "id": 2, "valor": "R$00,00", "dataPagamento": "11/11/1111", "status": "cancelados", "totalRecebido": "R$00,00", "pagamentosRealizados": "2", "valorMedioReserva": "R$00,00" },
+    { "id": 3, "valor": "R$00,00", "dataPagamento": "11/11/1111", "status": "estornados", "totalRecebido": "R$00,00", "pagamentosRealizados": "3", "valorMedioReserva": "R$00,00" },
+    { "id": 4, "valor": "R$00,00", "dataPagamento": "11/11/1111", "status": "recebidos", "totalRecebido": "R$00,00", "pagamentosRealizados": "4", "valorMedioReserva": "R$00,00" }
+  ],
+  "formaPagamentos": [
+    { "id": 1, "tipoPagamento": "pix", "idPagamentos": "1" },
+    { "id": 2, "tipoPagamento": "cartaoCredito", "idPagamentos": "2" },
+    { "id": 3, "tipoPagamento": "cartaoDebito", "idPagamentos": "3" },
+    { "id": 4, "tipoPagamento": "dinheiro", "idPagamentos": "4" }
+  ],
+  "check-in": [
+    { "id": 1, "idReserva": "1" },
+    { "id": 2, "idReserva": "2" },
+    { "id": 3, "idReserva": "3" },
+    { "id": 4, "idReserva": "4" }
+  ],
+  "check-out": [
+    { "id": 1, "qtdDiarias": "1", "qtdProdutos": "1", "qtdServicos": "1", "descricaoFinanceira": "valor da diaria R$00,00,produto ou serviço R$00,00,valor final R$ 00,00", "idPagamento": "1" },
+    { "id": 2, "qtdDiarias": "2", "qtdProdutos": "2", "qtdServicos": "2", "descricaoFinanceira": "valor da diaria R$00,00,produto ou serviço R$00,00,valor final R$ 00,00", "idPagamento": "2" },
+    { "id": 3, "qtdDiarias": "3", "qtdProdutos": "3", "qtdServicos": "3", "descricaoFinanceira": "valor da diaria R$00,00,produto ou serviço R$00,00,valor final R$ 00,00", "idPagamento": "3" },
+    { "id": 4, "qtdDiarias": "4", "qtdProdutos": "4", "qtdServicos": "4", "descricaoFinanceira": "valor da diaria R$00,00,produto ou serviço R$00,00,valor final R$ 00,00", "idPagamento": "4" }
+  ],
+  "consumoAdicional": [
+    { "id": 1, "descricao": "texto", "valor": "R$00,00", "idCheck-out": "1" },
+    { "id": 2, "descricao": "texto", "valor": "R$00,00", "idCheck-out": "2" },
+    { "id": 3, "descricao": "texto", "valor": "R$00,00", "idCheck-out": "3" },
+    { "id": 4, "descricao": "texto", "valor": "R$00,00", "idCheck-out": "4" }
+  ],
+  "quarto": [
+    { "id": 1, "numero": "101", "tipo": "standart", "capacidade": "1", "status": "ocupado", "observacoes": "texto", "idTarifa": "1", "idPacote": "1" },
+    { "id": 2, "numero": "102", "tipo": "luxo", "capacidade": "3", "status": "ocupado", "observacoes": "texto", "idTarifa": "2", "idPacote": "2" },
+    { "id": 3, "numero": "103", "tipo": "superior", "capacidade": "4", "status": "ocupado", "observacoes": "texto", "idTarifa": "3", "idPacote": "3" },
+    { "id": 4, "numero": "104", "tipo": "standart", "capacidade": "2", "status": "ocupado", "observacoes": "texto", "idTarifa": "4", "idPacote": "4" }
+  ],
+  "tarifa": [
+    { "id": 1, "tipoQuarto": "Luxo","Capacidade": "2 hospedes","valorDiarias": "R$00,00", "Status":"Ativo" },
+    { "id": 2, "tipoQuarto": "Standard","Capacidade": "2 hospedes","valorDiarias": "R$00,00", "Status":"Ativo" },
+    { "id": 3, "tipoQuarto": "Superior","Capacidade": "2 hospedes","valorDiarias": "R$00,00", "Status":"Ativo" },
+    { "id": 4, "tipoQuarto": "Cobertura","Capacidade": "2 hospedes","valorDiarias": "R$00,00", "Status":"Ativo" }
+  ],
+    "periodoTarifario": [
+    { "id": 1, "periodo": "Alta Temporada","inicio": "00/00/0000","fim": "00/00/0000","ajusteTarifa": "+30%" "Status":"Ativo" },
+    { "id": 2, "periodo": "Baixa Temporada","inicio": "00/00/0000","fim": "00/00/0000","ajusteTarifa": "-10%" "Status":"Ativo" },
+    { "id": 3, "periodo": "Feriados","inicio": "00/00/0000","fim": "00/00/0000","ajusteTarifa": "+40%" "Status":"Ativo" }
+  ],
+  "pacote": [
+    { "id": 1, "nome": "Natal", "descricao": "ceia,vinho", "preco": "R$00,00", "validade": "11/11/1111", "quantidade": "2", "status": "ativo" },
+    { "id": 2, "nome": "Ano Novo", "descricao": "ceia,vinho,chanpagne", "preco": "R$00,00", "validade": "11/11/1111", "quantidade": "2", "status": "ativo" },
+    { "id": 3, "nome": "Natal", "descricao": "ceia,vinho", "preco": "R$00,00", "validade": "11/11/1111", "quantidade": "2", "status": "ativo" },
+    { "id": 4, "nome": "Natal", "descricao": "ceia,vinho", "preco": "R$00,00", "validade": "11/11/1111", "quantidade": "2", "status": "ativo" }
+  ],
+  "itemConsumo": [
+    { "id": 1, "nome": "água", "categoria": "bebida", "codigo": "001", "preco": "R$00,00" },
+    { "id": 2, "nome": "lavanderia", "categoria": "limpeza", "codigo": "002", "preco": "R$00,00" },
+    { "id": 3, "nome": "transfer", "categoria": "transporte", "codigo": "003", "preco": "R$00,00" },
+    { "id": 4, "nome": "porção", "categoria": "alimento", "codigo": "004", "preco": "R$00,00" }
+  ],
+  "produto": [
+    { "id": 1, "estoqueMinimo": "03", "idItemConsumo": "1" },
+    { "id": 2, "estoqueMinimo": "04", "idItemConsumo": "1" },
+    { "id": 3, "estoqueMinimo": "03", "idItemConsumo": "4" },
+    { "id": 4, "estoqueMinimo": "05", "idItemConsumo": "4" }
+  ],
+  "servico": [
+    { "id": 1, "idItemConsumo": "2" },
+    { "id": 2, "idItemConsumo": "3" },
+    { "id": 3, "idItemConsumo": "2" },
+    { "id": 4, "idItemConsumo": "3" }
+  ]
+}
